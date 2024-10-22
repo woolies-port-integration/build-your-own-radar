@@ -380,7 +380,6 @@ function plotLoading(content) {
     plotBanner(content, bannerText)
     plotFooter(content)
   } else {
-    document.querySelector('.helper-description > p').style.display = 'none'
     document.querySelector('.input-sheet-form').style.display = 'none'
     document.querySelector('.helper-description .loader-text').style.display = 'block'
   }
@@ -487,7 +486,6 @@ function plotError(exception, fileType) {
   errorContainer.append('p').html(faqMessage)
   d3.select('.input-sheet-form.home-page p').attr('class', 'with-error')
 
-  document.querySelector('.helper-description > p').style.display = 'block'
   document.querySelector('.input-sheet-form').style.display = 'block'
 
   if (!featureToggles.UIRefresh2022) {
